@@ -1,0 +1,56 @@
+[{
+    'name': 'flagenwissen',
+    'id':  '02',
+    'questions': 
+            [{
+            'question': 'Wann entdeckte Christoph Kolumbus Amerika?',
+            'answer_1': '1482',
+            'answer_2': '1492',
+            'answer_3': '1499',
+            'answer_4': '1502',
+            'right_answer': '2',
+            'id': '02000',
+            'type': 'selection',
+            
+        },{
+            'question': 'wie viele smarties passen in einen smart',
+            'right_answer': '200000',
+            'id': '02001',
+            'type': 'estimate'}
+        ],
+    
+},
+{
+    'name': 'Nerdwissen',  -> Auswahl 
+    'id':  '03', 
+    'questions': 
+            [{
+            'id': '02002',   
+            'question': ' Welches Dateiformat öffnet man typischerweise mit dem Acrobat Reader?',
+            'img_path': 'img/emmmmmmttttyyy',
+            'right_answer': '4',
+            'answer_1': 'ARF',			///7x  input (4 antworten, frage, richtige antwort, bildname) 
+            'answer_2': 'BAT',
+            'answer_3': 'EXE',
+            'answer_4': 'PDF',
+            'type': 'selection', -> Auswahl 
+            
+        },{
+            'question': 'Wie viel Sturmtruppen gab es bei StarWars? ',
+            'img_path': 'img/emmmmmmttttyyy',
+            'right_answer': '1000000milllliiiionnnn',
+            'id': '02003',
+            'type': 'estimate'}  ///  3
+        ],
+    
+}];
+
+<section>
+    Allgemeinwisse
+    Nerdwissen
+    Sprachen
+    Wissenschaft 
+    Flagge
+    
+
+</section>

@@ -4,10 +4,32 @@ body {
     padding-left: 64px;
     padding-right: 64px;
 }
-.footer-custem {
+.footer-custum  {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     
+}
+.navbar-custum {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    left: 0;
+
+}
+.mt-60{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    margin-block-end: 30px;;
+
+}
+.btn-custum {
+    height: 80px;
+    width: 49%;
+}
+.custum_input_sek{
+    flex-direction: column;
+    display: flex;
 }

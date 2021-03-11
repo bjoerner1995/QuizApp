@@ -9,10 +9,10 @@
     <script src="game.js"></script>
     <title>Document</title>
 </head>
-<body onload="next()">
+<body onload="nextQuestion()">
     
     <!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-dark bg-dark navbar-custum">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="img/Quiz-1-600x315.png" alt="" width="30" height="24" class="d-inline-block align-top">
@@ -22,18 +22,18 @@
   </nav>
 
 
-    <h1 class="justify-content-center" >Quiz App</h1>
-
-    <div class="alert alert-success d-none " role="alert" id="success" >
-        A simple success alert—check it out!
+    <h1 class="mt-60" >Quiz App</h1>
+<div id="all"> 
+    <div class="alert alert-success d-none" role="alert" id="success" >
+        Richtige Antwort !
       </div>
       <div class="alert alert-danger d-none" role="alert" id="danger" >
-        A simple danger alert—check it out!
+        Falsche Antwort !
       </div>
 
     <div class="card">
         <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            <div class="progress-bar"  id="progress-bar" role="progressbar" style="width: 0%;" >0%</div>
           </div>
         <div class="card-body" id="question">
           Das ist die frage
@@ -43,14 +43,26 @@
 
 
       <div class="mt-4">
-    <button onclick="answer(1)"   id="answer1" class="btn btn-outline-primary">Antwort A</button>
-    <button onclick="answer(2)"   id="answer2" class="btn btn-outline-primary">Antwort B</button>
-    <button onclick="answer(3)"   id="answer3" class="btn btn-outline-primary">Antwort C</button>
-    <button onclick="answer(4)"   id="answer4" class="btn btn-outline-primary">Antwort D</button>
+        <div lass="mt-4">
+          <button onclick="answer(1)"   id="answer1" class="btn btn-custum btn-outline-primary">Antwort A</button>
+          <button onclick="answer(2)"   id="answer2" class="btn btn-custum btn-outline-primary">Antwort B</button>
+
+        </div>
+        <div class="mt-4">
+          <button onclick="answer(3)"   id="answer3" class="btn btn-custum btn-outline-primary">Antwort C</button>
+          <button onclick="answer(4)"   id="answer4" class="btn btn-custum btn-outline-primary">Antwort D</button>
+        </div>
       </div>
 
 
-      <footer class="bg-light text-center text-lg-start footer-custem">
+      
+    </div>
+      <div class="mt-4 d-flex justify-content-around ">   
+
+      <button  type="button" onclick="nextQuestion()" id="next_Question" class="btn btn-info d-none">Nächste Frage</button>
+      
+    </div>
+      <footer class="footer-custum mt-auto bg-light">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2020 Copyright:
@@ -58,5 +70,10 @@
         </div>
         <!-- Copyright -->
       </footer>
+
+
+
+
  </body>
+     
 </html>
