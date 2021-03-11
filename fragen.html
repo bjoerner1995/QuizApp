@@ -42,11 +42,45 @@
         <input id="answer_2" class="mt-4"type="text" placeholder="Antwort 2">
         <input id="answer_3" class="mt-4"type="text" placeholder="Antwort 3">
         <input id="answer_4" class="mt-4"type="text" placeholder="Antwort 4">
-    
+  
       </form>
 
+      <div class="mt-4" id="all"> 
+        <div class="alert alert-success d-none" role="alert" id="success" >
+            Richtige Antwort !
+          </div>
+          <div class="alert alert-danger d-none" role="alert" id="danger" >
+            Falsche Antwort !
+          </div>
+    
+        <div class="card">
+            <div class="card-body" id="question">
+              Das ist die frage
+            </div>
+          </div>
+    
+    
+    
+          <div class="mt-4">
+            <div class="mt-4 d-flex justify-content-between">
+              <button onclick="answer(1)"   id="answer1" class="btn btn-custum btn-primary">Antwort A</button>
+              <button onclick="answer(2)"   id="answer2" class="btn btn-custum btn-primary">Antwort B</button>
+    
+            </div>
+            <div class="mt-4 d-flex justify-content-between">
+              <button onclick="answer(3)"   id="answer3" class="btn btn-custum btn-primary">Antwort C</button>
+              <button onclick="answer(4)"   id="answer4" class="btn btn-custum btn-primary">Antwort D</button>
+            </div>
+          </div>
+    
+    
+          
+        </div>
+      
       
       
     </div>
 </body>
 </html>
+
+3 karten 

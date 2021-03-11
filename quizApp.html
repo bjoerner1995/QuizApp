@@ -23,7 +23,7 @@
 
 
     <h1 class="mt-60" >Quiz App</h1>
-<div id="all"> 
+<div class="all_box" id="all"> 
     <div class="alert alert-success d-none" role="alert" id="success" >
         Richtige Antwort !
       </div>
@@ -32,9 +32,7 @@
       </div>
 
     <div class="card">
-        <div class="progress">
-            <div class="progress-bar"  id="progress-bar" role="progressbar" style="width: 0%;" >0%</div>
-          </div>
+       
         <div class="card-body" id="question">
           Das ist die frage
         </div>
@@ -43,19 +41,27 @@
 
 
       <div class="mt-4">
-        <div lass="mt-4">
+        <div class="mt-4 d-flex justify-content-between">
           <button onclick="answer(1)"   id="answer1" class="btn btn-custum btn-outline-primary">Antwort A</button>
           <button onclick="answer(2)"   id="answer2" class="btn btn-custum btn-outline-primary">Antwort B</button>
 
         </div>
-        <div class="mt-4">
+        <div class="mt-4 d-flex justify-content-between">
           <button onclick="answer(3)"   id="answer3" class="btn btn-custum btn-outline-primary">Antwort C</button>
           <button onclick="answer(4)"   id="answer4" class="btn btn-custum btn-outline-primary">Antwort D</button>
         </div>
       </div>
+      
+      </div>
 
 
       
+   
+    
+    <div class="all_box mt-4" >
+        <div class="progress">
+          <div class="progress-bar"  id="progress-bar" role="progressbar" style="width: 0%;" >0%</div>
+        </div>
     </div>
       <div class="mt-4 d-flex justify-content-around ">   
 
