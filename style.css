@@ -42,3 +42,8 @@ iframe{
     border-radius: 2px;
     padding: 16px;    
 }
+.card-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

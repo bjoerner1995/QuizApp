@@ -1,0 +1,63 @@
+
+frage bild 1 Antwort
+frage bild input zahlen 
+login in 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+
+    <title>Card´s</title>
+</head>
+<body>
+    <div class="d-flex justify-content-between">
+    <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="./img/fragezeichen.png" class="card-img-top" alt="...">
+          <p class="card-text">
+            <div class="mt-4">
+                <div class="mt-4 d-flex justify-content-between">
+                  <button onclick="answer(1)"   id="answer1" class="btn btn-custum btn-outline-primary">Antwort A</button>
+                  <button onclick="answer(2)"   id="answer2" class="btn btn-custum btn-outline-primary">Antwort B</button>
+        
+                </div>
+                <div class="mt-4 d-flex justify-content-between">
+                  <button onclick="answer(3)"   id="answer3" class="btn btn-custum btn-outline-primary">Antwort C</button>
+                  <button onclick="answer(4)"   id="answer4" class="btn btn-custum btn-outline-primary">Antwort D</button>
+                </div>
+              </div>
+              
+              </div>
+              <button  type="button" onclick="nextQuestion()" id="next_Question" class=" btn-outline-primary " d-none> Nächste Frage</button>
+        </div>
+      
+
+      <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <img src="./img/fragezeichen.png" class="card-img-top" alt="...">
+          <p class="card-text card-custom ">
+            <div class="input-group input-group-lg" >
+                <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+              </div>
+              
+              </div>
+              <button  type="button" onclick="nextQuestion()" id="next_Question" class=" btn-outline-primary " d-none> Nächste Frage</button>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
